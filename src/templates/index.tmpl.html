@@ -1,0 +1,48 @@
+<html>
+  {{template "header.tmpl.html"}}
+<body>
+  {{template "nav.tmpl.html"}}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="uw_logo">
+      <img src="/static/uw_logo.png">
+    </a>
+
+    <body>
+      <div class="container">
+        <div class="page-title">
+          <h1>Ghetto Uniqueness Calculator</h1>
+          <p class="lead">Enter your submission for uniqueness ranking!</p>
+          <hr />
+        </div>
+
+        <form method="POST">
+          <div class="form-group">
+            <textarea class="form-control" name="body" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn btn-primary pull-right" />
+          </div>
+        </form>
+      </div>
+    </body>
+  </div>
+</div>
+<div class="container">
+  <div class="alert alert-info text-center" role="alert">
+      To lean more about the core aspects of what makes someone unique, check out this article: <a href="http://www.ilanelanzen.com/personaldevelopment/17-insights-on-what-makes-a-person-unique/" class="alert-link">17 Insights On What Makes a Person Unique</a>.
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-link"></span> Additional Links</h3>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Uniqueness">Wikipedia Uniqueness</a></li>
+        <li><a href="http://uw.acts2fellowship.org/">UW Acts2Fellowship</a></li>
+        <li><a href="https://devcenter.heroku.com/articles/go-support">Support</a></li>
+      </ul>
+    </div>
+  </div> <!-- row -->
+</div>
+
+</body>
+</html>
