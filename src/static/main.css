@@ -9,7 +9,7 @@
       background: #7646c1; }
   .jumbotron p {
     color: #d9ccee;
-    max-width: 75%;
+    max-width: 60%;
     margin: 1em auto 2em;
   }
   .navbar + .jumbotron {
@@ -33,7 +33,14 @@
     background: #532F8C;
 }
 
-.results h1 {
-  height:50px;
-  font-size: 100;
+.results{
+  min-height: 100px;
+}
+
+h1.score {
+  font-size: 4rem;
+}
+
+#exampleText {
+  font-size: 2rem;
 }

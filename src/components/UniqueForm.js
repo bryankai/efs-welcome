@@ -27,29 +27,35 @@ export default class UniqueForm extends React.Component {
   };
 
   render() {
+    const formPadding = {
+      padding: "0 5% 0 5%"
+    }
+
     return (
       <div>
         <div className='results'>
-          <h1>
+          <h1 className="score">
             {this.state.result}
           </h1>
         </div>
-        <div className="score">
+        <div className="instructions">
           <h3>
             Enter your submission for uniqueness ranking!
           </h3>
         </div>
-        <Form
-          onSubmit={event => {
-              event.preventDefault()
-              this.handleSubmit(event)
-            }}>
-          <FormGroup>
-            {/* <Label for="exampleText">Text Area</Label> */}
-            <Input type="textarea" name="text" id="exampleText" />
-          </FormGroup>
-          <Button>Submit</Button>
-        </Form>
+        <div id="form-container" style={formPadding}>
+          <Form
+            onSubmit={event => {
+                event.preventDefault()
+                this.handleSubmit(event)
+              }}>
+            <FormGroup>
+              {/* <Label for="exampleText">Text Area</Label> */}
+              <Input type="textarea" name="text" id="exampleText" />
+            </FormGroup>
+            <Button>Submit</Button>
+          </Form>
+        </div>
       </div>
 
     );
