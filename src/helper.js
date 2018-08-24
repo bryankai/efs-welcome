@@ -84,9 +84,9 @@ export const AuthenticationService = new AuthService()
 
 export const request = (path, method = 'get', body = null) => {
 
+  const BASE_URL = 'http://localhost:8080'
   const token = localStorage.getItem('token')
-
-  return axios(`${process.env.REACT_APP_BACKEND}${path}`, {
+  return axios(`${BASE_URL}${path}`, {
     method: method,
     headers: {
       'Content-Type': 'application/json',

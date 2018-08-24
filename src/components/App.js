@@ -10,7 +10,7 @@ class App extends Component {
     return (
 
       <div className="App">
-        <div class="jumbotron text-center">
+        <div class="jumbotron text-center" id="purple-background">
           <div class="container">
             <div className="uw_logo">
               <img src={uwLogo} alt="UW Logo"/>
@@ -19,7 +19,6 @@ class App extends Component {
                 <div class="page-title">
                   <h1>Ghetto Uniqueness Calculator</h1>
                   <p class="lead">Enter your submission for uniqueness ranking!</p>
-                  <hr />
                 </div>
               </div>
             </div>

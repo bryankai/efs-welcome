@@ -10,9 +10,11 @@
   .jumbotron p {
     color: #d9ccee;
     max-width: 75%;
-    margin: 1em auto 2em; }
+    margin: 1em auto 2em;
+  }
   .navbar + .jumbotron {
-    margin-top: -20px; }
+    margin-top: -20px;
+  }
   .jumbotron .uw_logo {
     display: block;
     background: white;
@@ -21,6 +23,12 @@
     width: 300px;
     height: 300px;
     margin: auto;
-    border: 2px solid white; }
-    .jumbotron .uw_logo img {
-      max-width: 100%; }
+    border: 2px solid white;
+  }
+.jumbotron .uw_logo img {
+      max-width: 100%;
+    }
+
+#purple-background {
+    background: #532F8C;
+}
