@@ -32,3 +32,8 @@
 #purple-background {
     background: #532F8C;
 }
+
+.results h1 {
+  height:50px;
+  font-size: 100;
+}

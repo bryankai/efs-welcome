@@ -18,19 +18,13 @@ class App extends Component {
               <div class="container">
                 <div class="page-title">
                   <h1>Ghetto Uniqueness Calculator</h1>
-                  <p class="lead">Enter your submission for uniqueness ranking!</p>
+                  {/* <p class="lead">Enter your submission for uniqueness ranking!</p> */}
                 </div>
               </div>
             </div>
           </div>
           <div>
             <UniqueForm/>
-            {/* <form>
-              <div className="form-group">
-                <textarea className="form-control" name="body" cols="30" rows="10"></textarea>
-                <input type="submit" className="btn btn-primary pull-right" />
-              </div>
-            </form> */}
           </div>
     </div>
     );

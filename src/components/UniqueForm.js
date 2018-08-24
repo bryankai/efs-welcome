@@ -9,7 +9,6 @@ export default class UniqueForm extends React.Component {
   this.state ={
     submission: '',
     result: '',
-    cache: {}
   }
 }
 
@@ -35,14 +34,18 @@ export default class UniqueForm extends React.Component {
             {this.state.result}
           </h1>
         </div>
+        <div className="score">
+          <h3>
+            Enter your submission for uniqueness ranking!
+          </h3>
+        </div>
         <Form
           onSubmit={event => {
               event.preventDefault()
-              console.log('hello', this.state.result)
               this.handleSubmit(event)
             }}>
           <FormGroup>
-            <Label for="exampleText">Text Area</Label>
+            {/* <Label for="exampleText">Text Area</Label> */}
             <Input type="textarea" name="text" id="exampleText" />
           </FormGroup>
           <Button>Submit</Button>
